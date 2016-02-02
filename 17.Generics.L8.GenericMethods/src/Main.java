@@ -1,3 +1,5 @@
+import test_classes.TestClassOne;
+
 import java.util.*;
 
 /**
@@ -17,5 +19,14 @@ public class Main {
         LinkedList<String> lls = New.lList();
         Set<String> ss = New.set();
         Queue<String> queue = New.queue();
+
+        Set<TestClassOne> ss2 = New.set();
+
+        //  ?????????????????? What the fuck ? WTF!!!
+        //Work with language level 8
+        //Doesn't work with language levels below
+        GenericsMethods.f(New.map());
+
+        http://blog.decaresystems.ie/2014/04/09/better-type-inference-in-java-8-generics/
     }
 }

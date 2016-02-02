@@ -1,3 +1,6 @@
+import test_classes.TestClassOne;
+import test_classes.TestClassTwo;
+
 import java.util.*;
 
 /**
