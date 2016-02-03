@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="17.Generics.L8.GenericMethods:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/17_Generics_L8_GenericMethods_jar</output-path>
+    <root id="archive" name="17.Generics.L8.GenericMethods.jar">
+      <element id="module-output" name="17.Generics.L8.GenericMethods" />
+      <element id="module-output" name="17.Generics.L7.Interfaces" />
+    </root>
+  </artifact>
+</component>

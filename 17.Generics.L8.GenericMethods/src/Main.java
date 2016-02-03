@@ -1,3 +1,5 @@
+import generators.CoffeeGenerator;
+import generics.coffee.Coffee;
 import test_classes.TestClassOne;
 import test_classes.TestClassTwo;
 
@@ -34,6 +36,7 @@ public class Main {
         //It works with language level 7
         GenericsMethods.f(New.<TestClassOne, List<? extends TestClassTwo>>map());
         testGenericVarargs();
+        testGenerators();
     }
 
     public static void testGenericVarargs() {
@@ -46,5 +49,16 @@ public class Main {
         ls = GenericVarargs.makeList("ABCDEAJDKHSJKFKLFDLFMEPOKPOIOUQIYEOHWJZBNMXCBXCDLSJDJ".split(""));
         System.out.println(ls);
         Arrays.asList("A");
+    }
+
+    public static void testGenerators() {
+        CoffeeGenerator gen = new CoffeeGenerator();
+//        ArrayList<Coffee> list = new ArrayList<>();
+        List<Coffee> coffee = Generators.fill(new ArrayList<Coffee>(), gen, 10);
+        LinkedList<Coffee> coffee2 = Generators.fill(new LinkedList<Coffee>(), gen, 10);
+        System.out.println("testGenerators()");
+        for(Coffee c : coffee) {
+            System.out.println(c);
+        }
     }
 }

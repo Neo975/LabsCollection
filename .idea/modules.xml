@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/17.Generics.L6/17.Generics.L6.iml" filepath="$PROJECT_DIR$/17.Generics.L6/17.Generics.L6.iml" />
       <module fileurl="file://$PROJECT_DIR$/17.Generics.L7.Interfaces/17.Generics.L7.Interfaces.iml" filepath="$PROJECT_DIR$/17.Generics.L7.Interfaces/17.Generics.L7.Interfaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/17.Generics.L8.GenericMethods/17.Generics.L8.GenericMethods.iml" filepath="$PROJECT_DIR$/17.Generics.L8.GenericMethods/17.Generics.L8.GenericMethods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/17.Generics.L9.BasicGenerator/17.Generics.L9.BasicGenerator.iml" filepath="$PROJECT_DIR$/17.Generics.L9.BasicGenerator/17.Generics.L9.BasicGenerator.iml" />
     </modules>
   </component>
 </project>
