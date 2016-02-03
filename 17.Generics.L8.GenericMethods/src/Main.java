@@ -1,11 +1,16 @@
 import test_classes.TestClassOne;
+import test_classes.TestClassTwo;
 
 import java.util.*;
 
 /**
  * Created by Mike on 31.01.2016.
  */
+//        http://blog.decaresystems.ie/2014/04/09/better-type-inference-in-java-8-generics/
+
 public class Main {
+    private int t= 44;
+
     public static void main(String[] args) {
         Byte b = 0x45;
         GenericsMethods gm = new GenericsMethods();
@@ -23,10 +28,23 @@ public class Main {
         Set<TestClassOne> ss2 = New.set();
 
         //  ?????????????????? What the fuck ? WTF!!!
-        //Work with language level 8
+        //It works with language level 8
         //Doesn't work with language levels below
-        GenericsMethods.f(New.map());
+//        GenericsMethods.f(New.map());
+        //It works with language level 7
+        GenericsMethods.f(New.<TestClassOne, List<? extends TestClassTwo>>map());
+        testGenericVarargs();
+    }
 
-        http://blog.decaresystems.ie/2014/04/09/better-type-inference-in-java-8-generics/
+    public static void testGenericVarargs() {
+        List<String> ls;
+
+        ls = GenericVarargs.makeList("A");
+        System.out.println(ls);
+        ls = GenericVarargs.makeList("A", "B", "C", "D", "E");
+        System.out.println(ls);
+        ls = GenericVarargs.makeList("ABCDEAJDKHSJKFKLFDLFMEPOKPOIOUQIYEOHWJZBNMXCBXCDLSJDJ".split(""));
+        System.out.println(ls);
+        Arrays.asList("A");
     }
 }
