@@ -1,13 +1,7 @@
 import watercolors.*;
-
 import static watercolors.Watercolors.*;
-
 import java.util.*;
 
-
-/**
- * Created by user on 04.02.2016.
- */
 public class Main {
     public static void main(String[] args) {
         Set<Watercolors> set1 = EnumSet.range(BRILLIANT_RED, VIRIDIAN_HUE);
@@ -22,6 +16,7 @@ public class Main {
         System.out.println("complement(set1, set2): " + Sets.complement(set1, set2));
 
         printMethodDifferences();
+
     }
 
     public static void printMethodDifferences() {
