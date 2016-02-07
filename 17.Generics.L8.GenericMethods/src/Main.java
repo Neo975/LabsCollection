@@ -1,4 +1,5 @@
 import generators.CoffeeGenerator;
+import generators.Generators;
 import generics.coffee.Coffee;
 import test_classes.TestClassOne;
 import test_classes.TestClassTwo;

@@ -1,3 +1,5 @@
+package generators;
+
 import generators.Generator;
 
 import java.util.*;

@@ -1,4 +1,4 @@
-import generators.Generator;
+import generators.Generators;
 
 import java.util.*;
 
@@ -20,7 +20,7 @@ public class Main {
         System.out.println("======== Customers, tellers ============");
         Queue<Customer> line = new LinkedList<Customer>();
         Generators.fill(line, Customer.generator(), 15);
-//        Generators.fill(line, Customer.generator, 15);
+//        generators.Generators.fill(line, Customer.generator, 15);
         List<Teller> tellers = new ArrayList<Teller>();
         Generators.fill(tellers, Teller.generator, 4);
 
