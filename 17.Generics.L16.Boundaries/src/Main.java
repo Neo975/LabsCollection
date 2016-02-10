@@ -1,5 +1,6 @@
 import makers.ArrayMaker;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 /**
@@ -10,8 +11,17 @@ public class Main {
 
         ArrayMaker<String> stringMaker = new ArrayMaker<String>(String.class);
         String[] stringArray = stringMaker.create(9);
+//        String[] stringArray = stringMaker.createJava8(9);
 
+        fillArrayContent(stringArray);
         System.out.println(Arrays.toString(stringArray));
         int t = 9;
     }
+
+    static void fillArrayContent(String[] array) {
+        for (int i = 0; i < array.length; i++) {
+            array[i] = "Item " + i;
+        }
+    }
+
 }

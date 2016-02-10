@@ -13,10 +13,26 @@ public class ArrayMaker<T> {
         this.kind = kind;
     }
 
-    @SuppressWarnings("unchecked")
+//    @SuppressWarnings("unchecked")
     public T[] create(int size) {
         System.out.println("Kind type name: " + kind.getTypeName());
         System.out.println("Kind type parameters: " + Arrays.toString(kind.getTypeParameters()));
-        return (T[]) Array.newInstance(kind, size);
+        T[] returnValue = (T[]) Array.newInstance(kind, size);
+
+        return returnValue;
+    }
+
+    public T[] createJava8(int size) {
+        Object returnValue = null;
+
+        try {
+            returnValue = Array.newInstance(Class.forName(kind.getTypeName()), size);
+
+            int t = 9;
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        return (T[])returnValue;
     }
 }
