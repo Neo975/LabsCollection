@@ -8,6 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/17.Generics.L12.Anonymous_Inner_Classes/17.Generics.L12.Anonymous_Inner_Classes.iml" filepath="$PROJECT_DIR$/17.Generics.L12.Anonymous_Inner_Classes/17.Generics.L12.Anonymous_Inner_Classes.iml" />
       <module fileurl="file://$PROJECT_DIR$/17.Generics.L13.ComplexModels/17.Generics.L13.ComplexModels.iml" filepath="$PROJECT_DIR$/17.Generics.L13.ComplexModels/17.Generics.L13.ComplexModels.iml" />
       <module fileurl="file://$PROJECT_DIR$/17.Generics.L14.Erasure/17.Generics.L14.Erasure.iml" filepath="$PROJECT_DIR$/17.Generics.L14.Erasure/17.Generics.L14.Erasure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/17.Generics.L14_2.Exercise20/17.Generics.L14_2.Exercise20.iml" filepath="$PROJECT_DIR$/17.Generics.L14_2.Exercise20/17.Generics.L14_2.Exercise20.iml" />
+      <module fileurl="file://$PROJECT_DIR$/17.Generics.L15.ErasureProblems/17.Generics.L15.ErasureProblems.iml" filepath="$PROJECT_DIR$/17.Generics.L15.ErasureProblems/17.Generics.L15.ErasureProblems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/17.Generics.L16.Boundaries/17.Generics.L16.Boundaries.iml" filepath="$PROJECT_DIR$/17.Generics.L16.Boundaries/17.Generics.L16.Boundaries.iml" />
       <module fileurl="file://$PROJECT_DIR$/17.Generics.L2.Tuple/17.Generics.L2.Tuple.iml" filepath="$PROJECT_DIR$/17.Generics.L2.Tuple/17.Generics.L2.Tuple.iml" />
       <module fileurl="file://$PROJECT_DIR$/17.Generics.L3.Sequence/17.Generics.L3.Sequence.iml" filepath="$PROJECT_DIR$/17.Generics.L3.Sequence/17.Generics.L3.Sequence.iml" />
       <module fileurl="file://$PROJECT_DIR$/17.Generics.L4.Stack/17.Generics.L4.Stack.iml" filepath="$PROJECT_DIR$/17.Generics.L4.Stack/17.Generics.L4.Stack.iml" />
@@ -19,3 +22,4 @@
     </modules>
   </component>
 </project>
+

@@ -1,3 +1,7 @@
+import manipulators.HasF;
+import manipulators.Manipulator;
+import manipulators.Manipulator2;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 
@@ -14,5 +18,12 @@ public class Main {
         System.out.println("!!! ArrayList<Integer>.getClass() equals ArrayList<String>.getClass() ?: " + (class1 == class2) + " !!!");
         System.out.println("LostInformation: ");
         LostInformation.printInformation();
+
+        System.out.println("-------------------- Manipulator -----------------------------");
+        HasF hf = new HasF();
+        Manipulator<HasF> manipulator = new Manipulator<HasF>(hf);
+        manipulator.manipulate();
+        Manipulator2<HasF> manipulator2 = new Manipulator2<HasF>(hf);
+        manipulator2.manipulate();
     }
 }
