@@ -11,6 +11,7 @@ class House extends Building {}
 
 public class ClassTypeCapture<T> {
     private Class<T> kind;
+    private static Map<String, Class<?>> mapTypes = new HashMap<String, Class<?>>();
 
     public ClassTypeCapture(Class<T> kind) {
         this.kind = kind;
@@ -20,20 +21,22 @@ public class ClassTypeCapture<T> {
         return kind.isInstance(arg);
     }
 
-    public static Map<String, Class<?>> createNew(String typename) {
-        Class<?> obj;
-        Map<String, Class<?>> typeMap = null;
+    public static Object createNew(String typename) {
+        Object cl = null;
 
         try {
-            obj = Class.forName(typename);
-            typeMap = new HashMap<String, Class<?>>();
-            typeMap.put(typename, obj);
-        } catch (ClassNotFoundException e) {
-            System.out.println("ClassNotFoundException");
-            return null;
+            cl = mapTypes.get(typename).newInstance();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
         }
 
-        return typeMap;
+        return cl;
+    }
+
+    public static void addType(String typename, Class<?> kind) {
+        mapTypes.put(typename, kind);
     }
 
     public static void main(String[] args) {
@@ -44,22 +47,12 @@ public class ClassTypeCapture<T> {
         System.out.println(ctt2.f(new Building()));
         System.out.println(ctt2.f(new House()));
 
-        Map<String, Class<?>> map = createNew(House.class.getName());
-        Object value;
-        Constructor<?>[] cc = Integer.class.getConstructors();
-        try {
-            House.class.newInstance();      //Can instantiate, exist default constructor
-            Class<?> cl = map.get(House.class.getName());
-            cl.newInstance();
-            Integer.class.newInstance();    //Can't instantiate, not exist default constructor
-            value = map.get(Integer.class.getName()).newInstance();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        }
+        addType("String", String.class);
+        addType("House", House.class);
+        addType("Integer", Integer.class);
 
-        int t = 9;
+        House h = (House) createNew("House");
+        Integer i = (Integer) createNew("Integer");
     }
 }
 
