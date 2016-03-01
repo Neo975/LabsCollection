@@ -5,7 +5,8 @@ package ExplicitFactory;
  */
 public class IntegerFactory implements FactoryI<Integer> {
     @Override
-    public Integer create() {
+    public Integer create(int arg) {
+        System.out.println("Integer arg " + arg);
         return new Integer(0);
     }
 }
