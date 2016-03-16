@@ -1,7 +1,8 @@
 package Main;
 
-import BasicBounds.Solid;
-import BasicBounds.Solid2;
+import Bounds.EpicBattle;
+import Bounds.Solid;
+import Bounds.Solid2;
 
 public class L24 {
     public static void main(String[] args) {
@@ -14,5 +15,7 @@ public class L24 {
         solid2.color();
         solid2.getY();
         solid2.weight();
+
+        EpicBattle.f();
     }
 }

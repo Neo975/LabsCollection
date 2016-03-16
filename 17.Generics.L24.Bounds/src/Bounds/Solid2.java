@@ -1,4 +1,4 @@
-package BasicBounds;
+package Bounds;
 
 import java.awt.*;
 
