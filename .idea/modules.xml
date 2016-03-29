@@ -24,6 +24,7 @@
       <module fileurl="file://$PROJECT_DIR$/17.Generics.L25.Wildcards/17.Generics.L25.Wildcards.iml" filepath="$PROJECT_DIR$/17.Generics.L25.Wildcards/17.Generics.L25.Wildcards.iml" />
       <module fileurl="file://$PROJECT_DIR$/17.Generics.L26.Wildcards2/17.Generics.L26.Wildcards2.iml" filepath="$PROJECT_DIR$/17.Generics.L26.Wildcards2/17.Generics.L26.Wildcards2.iml" />
       <module fileurl="file://$PROJECT_DIR$/17.Generics.L28/17.Generics.L28.iml" filepath="$PROJECT_DIR$/17.Generics.L28/17.Generics.L28.iml" />
+      <module fileurl="file://$PROJECT_DIR$/17.Generics.L29.UnboundedWildcards/17.Generics.L29.UnboundedWildcards.iml" filepath="$PROJECT_DIR$/17.Generics.L29.UnboundedWildcards/17.Generics.L29.UnboundedWildcards.iml" />
       <module fileurl="file://$PROJECT_DIR$/17.Generics.L3.Sequence/17.Generics.L3.Sequence.iml" filepath="$PROJECT_DIR$/17.Generics.L3.Sequence/17.Generics.L3.Sequence.iml" />
       <module fileurl="file://$PROJECT_DIR$/17.Generics.L4.Stack/17.Generics.L4.Stack.iml" filepath="$PROJECT_DIR$/17.Generics.L4.Stack/17.Generics.L4.Stack.iml" />
       <module fileurl="file://$PROJECT_DIR$/17.Generics.L5.RandomList/17.Generics.L5.RandomList.iml" filepath="$PROJECT_DIR$/17.Generics.L5.RandomList/17.Generics.L5.RandomList.iml" />
@@ -34,3 +35,4 @@
     </modules>
   </component>
 </project>
+
